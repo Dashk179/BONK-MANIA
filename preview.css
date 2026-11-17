@@ -1,0 +1,17 @@
+/* WHACK 3D — HUD revision for browser preview */
+:root{--hud-bg:#252334;--hud-border:#ae89dd}
+.hud{top:14px;left:22px;right:320px;justify-content:flex-start;gap:12px}
+.pill{background:linear-gradient(#39374c,#211f31);border:2px solid #a989db;color:white;border-radius:20px;box-shadow:0 5px 0 #17142155;min-width:110px;padding:10px 15px;text-shadow:0 2px 2px #0008}
+.pill small{color:#f7d6a4;opacity:1;font-size:12px}
+.pill strong{font-size:24px}
+.timebar{top:100px;left:22px;width:min(680px,calc(100vw - 380px));padding:13px 16px;background:linear-gradient(#3c384d,#242235);border:3px solid #b798e3;border-radius:22px;color:white;box-shadow:0 6px 0 #17142155}
+.timebar-label{font-size:16px;margin-bottom:9px}
+.timebar-track{height:22px;background:#4b4858;border:2px solid #1d1a2c}
+#timeFill{background:linear-gradient(#c7ec74,#70c54a)}
+.species-panel{top:108px;right:18px;width:296px;padding:17px 16px 19px;border:3px solid #b49add;border-radius:25px;background:linear-gradient(140deg,#343145,#211f30);box-shadow:0 8px 0 #17142166;color:white}
+.species-title{font-size:20px;text-align:center;line-height:1.2;margin-bottom:13px;padding:8px 4px 12px;border-bottom:2px solid #6d657b;text-shadow:0 2px 3px #0008}
+.species-row{font-size:17px;padding:14px 0;border-bottom:1px solid #736b82;gap:6px}
+.species-row span:last-child{font-size:16px;color:#ffd66a;white-space:nowrap;text-shadow:0 2px 3px #0008}
+#hammer{width:240px;height:240px;transform:translate(-85px,-185px)}
+#hammer canvas{width:240px!important;height:240px!important}
+@media(max-width:900px){.species-panel{width:220px;padding:10px}.species-row{font-size:13px}.species-row span:last-child{font-size:12px}.hud{right:240px}.timebar{width:calc(100vw - 265px)}}
