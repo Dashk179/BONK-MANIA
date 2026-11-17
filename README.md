@@ -31,11 +31,12 @@ Explore 10 unique worlds across 100 increasingly challenging levels.
 
 <div align="center">
 
-<img src="docs/images/gameplay-01.png" alt="BONK MANIA gameplay screenshot 1" width="48%">
-<img src="docs/images/gameplay-02.png" alt="BONK MANIA gameplay screenshot 2" width="48%">
-
-<img src="docs/images/gameplay-03.png" alt="BONK MANIA gameplay screenshot 3" width="48%">
-<img src="docs/images/gameplay-04.png" alt="BONK MANIA gameplay screenshot 4" width="48%">
+<div align="center">
+  <img src="gameplay-01.png" width="48%" alt="Enchanted Forest">
+  <img src="gameplay-02.png" width="48%" alt="Mine Tutorial">
+  <img src="gameplay-03.png" width="48%" alt="Electric Magnet">
+  <img src="gameplay-04.png" width="48%" alt="Candy World">
+</div>
 
 </div>
 
