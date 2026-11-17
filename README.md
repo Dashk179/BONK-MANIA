@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<img src="docs/images/cover.png" alt="BONK MANIA Cover" width="100%">
+<img src="docs/images/cover_CD.png" alt="BONK MANIA Cover" width="100%">
 
 # 🎮 BONK MANIA
 
