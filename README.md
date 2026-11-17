@@ -1,22 +1,137 @@
-# BONK MANIA v1.1 — YouTube Playables Release Candidate
 
-## Cambios
-- SDK oficial de YouTube antes de cualquier código del juego; `firstFrameReady`, `gameReady`, `IN_PLAYABLES_ENV`, audio, pausa, reanudación, `loadData`, `saveData`, `sendScore`.
-- Bombas sobre animales: 1 corazón completo; erizo con dos bombas: 2 corazones; minas: 3 corazones completos. Internamente cada corazón equivale a dos unidades.
-- Conserva las minas desde el nivel 10, tutorial y desactivación eléctrica.
-- DEBUG_MODE=false, 60 segundos por nivel.
-- Protecciones adicionales de audio silenciado y de puntaje.
+<div align="center">
 
-## BLOQUEADOR PARA SUBIR A YOUTUBE
-Este paquete NO está listo para subir: `index.html` importa Three.js 0.160.0 desde CDN. El entorno de creación no tiene acceso al paquete externo para incluirlo. Antes de enviar:
-1. Descargar legalmente `three.module.js` v0.160.0 de https://www.npmjs.com/package/three (licencia MIT) o desde npm (`npm pack three@0.160.0`).
-2. Copiar `package/build/three.module.js` a `vendor/three.module.js` y cambiar en `index.html` el import CDN por `./vendor/three.module.js`.
-3. Revisar que ninguna otra petición externa ocurra salvo el SDK autorizado de YouTube.
-4. Ejecutar la suite oficial de YouTube y probar el juego real en móvil y escritorio.
-5. Obtener acceso al portal de desarrolladores de YouTube Playables y enviar el ZIP validado.
+<img src="docs/images/cover.png" alt="BONK MANIA Cover" width="100%">
 
-## Notas de QA
-- Integridad del ZIP y sintaxis del JavaScript comprobadas; NO se realizó prueba funcional de navegador ni suite oficial.
-- No incluye recursos para anuncios ni anuncios obligatorios.
-- No afirma aprobación ni certificación de YouTube.
-- Iniciar un servidor local, p. ej. `python -m http.server 8000`, en la carpeta y visitar http://localhost:8000.
+# 🎮 BONK MANIA
+
+### A colorful 3D arcade adventure!
+
+**100 Levels · 10 Worlds · Cute Animals · Power-Ups · Electric Mines**
+
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![Three.js](https://img.shields.io/badge/Three.js-3D-black?logo=threedotjs)
+![HTML5](https://img.shields.io/badge/HTML5-Game-E34F26?logo=html5&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Web%20%7C%20YouTube%20Playables-blue)
+![Status](https://img.shields.io/badge/Status-Release%20Candidate-orange)
+
+</div>
+
+---
+
+## 🌟 About the Game
+
+**BONK MANIA** is a fun, colorful 3D arcade game featuring adorable animal characters, exciting challenges, and interactive gameplay.
+
+Use your hammer to score points, activate special animal helpers, and switch to your electric magnet to defuse dangerous mines!
+
+Explore 10 unique worlds across 100 increasingly challenging levels.
+
+## 🕹️ Gameplay Screenshots
+
+<div align="center">
+
+<img src="docs/images/gameplay-01.png" alt="BONK MANIA gameplay screenshot 1" width="48%">
+<img src="docs/images/gameplay-02.png" alt="BONK MANIA gameplay screenshot 2" width="48%">
+
+<img src="docs/images/gameplay-03.png" alt="BONK MANIA gameplay screenshot 3" width="48%">
+<img src="docs/images/gameplay-04.png" alt="BONK MANIA gameplay screenshot 4" width="48%">
+
+</div>
+
+## ✨ Features
+
+- 🎯 **100 Levels** with progressive difficulty.
+- 🌎 **10 Unique Worlds** with themed 3D environments.
+- 🐸 **Animal Helpers** with special abilities.
+- 🔨 **Interactive Hammer** for arcade gameplay.
+- 🧲 **Electric Magnet** to defuse mines.
+- 💣 **Mine Challenges** with countdown timers.
+- ❤️ **Heart System** with damage and healing.
+- ⭐ **Combos, Scores & Rewards**.
+- 🎨 **Sticker Mania UI**, colorful and kid-friendly.
+- 📱 **Responsive Design** for desktop and mobile.
+- 🎮 **YouTube Playables SDK Integration** (testing).
+
+## 🎮 Controls
+
+| Action | Control |
+|---|---|
+| Hit animals | Left click |
+| Switch tools | Right click |
+| Alternative tool switch | Space |
+| Defuse mines | Equip magnet + left click |
+| Mobile | Touch controls |
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Three.js
+- Web Audio API
+- YouTube Playables SDK
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/bonk-mania.git
+cd bonk-mania
+```
+
+Start a local web server:
+
+```bash
+python -m http.server 8000
+```
+
+Open:
+
+`http://localhost:8000`
+
+An internet connection may be required for external dependencies.
+
+## 📺 YouTube Playables
+
+BONK MANIA is being prepared for YouTube Playables.
+
+Current development priorities include:
+
+- SDK compatibility testing
+- Local dependency packaging
+- Mobile performance optimization
+- Content Security Policy validation
+- Final gameplay quality assurance
+
+**Note:** This project is not yet certified or published on YouTube Playables.
+
+## 📁 Project Structure
+
+```text
+bonk-mania/
+├── index.html
+├── config.js
+├── assets/
+├── docs/
+│   └── images/
+│       ├── cover.png
+│       ├── gameplay-01.png
+│       ├── gameplay-02.png
+│       ├── gameplay-03.png
+│       └── gameplay-04.png
+└── README.md
+```
+
+---
+
+<div align="center">
+
+### ⭐ BONK MANIA
+
+**BONK · SCORE · SURVIVE!**
+
+Made with ❤️ for arcade game lovers.
+
+</div>
